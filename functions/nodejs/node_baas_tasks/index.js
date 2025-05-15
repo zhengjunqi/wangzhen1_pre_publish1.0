@@ -34,6 +34,17 @@
     }
   )
   logger.info(`task_id: ${task_id}`);
-
+  const taskIDV3 = await baas.tasks.createDistributedTaskV3(
+    dataset,  // 待处理数据组成的数组，数据量限制 50 M 
+    "node_application_global_var",  //用于处理数据集的全局函数的 API name
+    "node_application_oql",  //任务进度发生变化时回调的全局函数的 API name，可通过传入"" / null / undefined 跳过此步骤
+    "node_application_metadata",  // 任务完成时回调的全局函数的 API name，可通过传入"" / null / undefined 跳过此步骤
+    {
+      concurrency:5,  //并发数量，默认值为 5，最大可设置值为 10，若实际设置值超过可设置最大值，将报错
+      maxSliceNumber:20,  //单个子任务单次处理的最大数据量，默认值为 5，最大可设置值为 100，若实际设置值超过可设置最大值，将报错
+      progressCallbackStep:30 //触发进度回调函数的步长，每当发生大于等于步长的进度变化时，便触发进度回调函数
+    }
+  )
+  logger.info(`taskIDV3 type: ${typeof taskIDV3}, taskiD:${taskIDV3}`);
   // 在这里补充业务代码
 }

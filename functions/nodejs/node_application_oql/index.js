@@ -43,7 +43,7 @@
   oql_str = "select name,age from object_6aecfa241c6 where age > $age";
   records = await application.data.oql(oql_str,{"age": 18}).useSystemAuth().execute()
   logger.info(records)
-
+  logger.info(`oql ${JSON.stringify(params)} 函数开始执行222`)
 
 
   // 在这里补充业务代码

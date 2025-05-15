@@ -20,6 +20,6 @@
   // 指定字段
   object_metadata = await application.metadata.object('object_6aecfa241c6').getField('name')
   logger.info(object_metadata)
-
+  logger.info(`metadata ${JSON.stringify(params)} 函数开始执行333`)
   // 在这里补充业务代码
 }

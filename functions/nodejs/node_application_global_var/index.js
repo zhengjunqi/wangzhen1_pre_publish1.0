@@ -22,7 +22,7 @@
     record: await application.globalVar.getVar("globalParam_cfe6f8b3bd8"),
   };
   logger.info(JSON.stringify(globalVarValues));
-
+  logger.info(`globalVar ${JSON.stringify(params)} 函数开始执行111`)
   //打印入参
   logger.info(params.demo_input_field)
 
