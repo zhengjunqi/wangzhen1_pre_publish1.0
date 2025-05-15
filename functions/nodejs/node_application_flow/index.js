@@ -11,7 +11,7 @@
  */
  module.exports = async function (params, context, logger) {
   // 日志功能
-  // logger.info(`${new Date()} 函数开始执行`);
+  logger.info(`${new Date()} 函数开始执行`);
 
   // 调用流程，仅支持 “直接触发流程” 类型的流程
   logger.info("==================================")
