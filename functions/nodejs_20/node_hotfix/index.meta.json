@@ -1,0 +1,16 @@
+{
+  "apiID": "package_b82220__c__function_aadievfdgpkaw",
+  "apiName": "node_hotfix",
+  "label": {
+    "zh_CN": "DTS-node_hotfix",
+    "en_US": ""
+  },
+  "description": {
+    "zh_CN": "自定义函数",
+    "en_US": "Custom Function"
+  },
+  "longTaskMode": false,
+  "frontendSDKInvokable": true,
+  "input": [],
+  "output": []
+}
