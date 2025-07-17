@@ -2,32 +2,32 @@
 # yarn lockfile v1
 
 
-"@byted-apaas/baas-sdk-node@1.0.16":
-  version "1.0.16"
-  resolved "https://registry.npmmirror.com/@byted-apaas/baas-sdk-node/-/baas-sdk-node-1.0.16.tgz#7fd228af288658f346a917c95b583384ea5885bb"
-  integrity sha512-bf6fqAMc/LRyBXPBl6D6x8+2CloAiaB/5JCXWcyUHR2e8KgF9ajox9OGcMOxlYTnyN3/UnSJfV4Epyf2Dd8Baw==
+"@byted-apaas/baas-sdk-node@1.0.18-beta.1":
+  version "1.0.18-beta.1"
+  resolved "https://registry.npmmirror.com/@byted-apaas/baas-sdk-node/-/baas-sdk-node-1.0.18-beta.1.tgz#7a33f4943e3d59a2b6d3f177366a58b2aeb0da23"
+  integrity sha512-J0QnZ+WvCbftV2Z8Gzt5p7gYmV+U1n1ymjaZTE2JTpj7TmECJQ46IORgKpRR2oHNvUnl01mWFtHFOP0h2zpceA==
   dependencies:
-    "@byted-apaas/server-common-node" "^2.0.2"
+    "@byted-apaas/server-common-node" "2.0.22-beta.1"
     axios "^0.25.0"
     bson "^1.1.6"
     form-data "^3.0.0"
     mime "^3.0.0"
 
-"@byted-apaas/faas-sdk-node@1.0.11":
-  version "1.0.11"
-  resolved "https://registry.npmmirror.com/@byted-apaas/faas-sdk-node/-/faas-sdk-node-1.0.11.tgz#b69f23719b27eb65c448b70944695bf4f55183c1"
-  integrity sha512-ennSiLlf3AeFieZAYYWAX4w57aMfo+wxCbyLDdU4Gg5E9soFljALz3Idw9jyTO00Ei4N69fdjkesoY3DPfF7DQ==
+"@byted-apaas/faas-sdk-node@1.0.12":
+  version "1.0.12"
+  resolved "https://registry.npmmirror.com/@byted-apaas/faas-sdk-node/-/faas-sdk-node-1.0.12.tgz#6dcbf223aeb8bfde1a9a9e309171804fcca1e7f1"
+  integrity sha512-tqWTDuqOn2eCfUx619+wOVirhXhJS+MtOo9IXXakkGeVTZm25yumYYvcNaLdQ/Me9cL57ODj/r9l2fFmATR/kw==
   dependencies:
-    "@byted-apaas/server-common-node" "^2.0.1"
+    "@byted-apaas/server-common-node" "^2.0.4"
     axios "^0.25.0"
     bson "^1.1.6"
     form-data "^3.0.0"
     mime "^3.0.0"
 
-"@byted-apaas/server-common-node@2.0.16":
-  version "2.0.16"
-  resolved "https://registry.npmmirror.com/@byted-apaas/server-common-node/-/server-common-node-2.0.16.tgz#5f5f19bb2629916573dfbd2f29b8b1e98205c852"
-  integrity sha512-LfCNbTQrHLkiEG5BJaxTmTHROclzaOG4ciC2v/tpXspQ80FVkE+NQ8xuFpPWzjWuMDrdqfsOtHdm/Bw2xp7koA==
+"@byted-apaas/server-common-node@2.0.22-beta.1":
+  version "2.0.22-beta.1"
+  resolved "https://registry.npmmirror.com/@byted-apaas/server-common-node/-/server-common-node-2.0.22-beta.1.tgz#54eece1d6ce8c00412f985236ab3eedb6c17df14"
+  integrity sha512-p/PUUNcWzKmdlXsNvxY+dYEfq3hGYdLo7ugK/mhPYmdpql/no4cH2fRJboivsb/BGupNKrljscA6pmir9AZrhw==
   dependencies:
     bson "^1.0.7"
     crypto-js "^4.1.1"
@@ -39,7 +39,22 @@
     node-cache "^5.1.2"
     node-cls "^1.0.7"
 
-"@byted-apaas/server-common-node@^2.0.1", "@byted-apaas/server-common-node@^2.0.13", "@byted-apaas/server-common-node@^2.0.2":
+"@byted-apaas/server-common-node@2.0.22-beta.4":
+  version "2.0.22-beta.4"
+  resolved "https://registry.npmmirror.com/@byted-apaas/server-common-node/-/server-common-node-2.0.22-beta.4.tgz#6766c87195d35e3c15ce9248598ef9298016fcfe"
+  integrity sha512-kendLBIotGvvs6UF+eueNrraWD0PvrU91TTSZE5/3Il/MQAqEPWiWB4CQKZlba8ywCKVcWQlrQcJYFSJJuaT+w==
+  dependencies:
+    bson "^1.0.7"
+    crypto-js "^4.1.1"
+    dayjs "^1.9.6"
+    form-data "^4.0.0"
+    got "11.8.6"
+    microtime "^3.1.1"
+    nanoid "^3.3.4"
+    node-cache "^5.1.2"
+    node-cls "^1.0.7"
+
+"@byted-apaas/server-common-node@^2.0.13":
   version "2.0.18"
   resolved "https://registry.npmmirror.com/@byted-apaas/server-common-node/-/server-common-node-2.0.18.tgz#e3aa9b2a610830d31543c705cd5ba350be094089"
   integrity sha512-o9Um5KrfTD3mdFLV1h2liTLNRWZY4Ptc1d3HA19RFcIseWIkhZ5ykJQyNyZlfWaF2xmi1a4RaTl+PDmJ6HpnBA==
@@ -54,10 +69,25 @@
     node-cache "^5.1.2"
     node-cls "^1.0.7"
 
-"@byted-apaas/server-sdk-node@1.1.19":
-  version "1.1.19"
-  resolved "https://registry.npmmirror.com/@byted-apaas/server-sdk-node/-/server-sdk-node-1.1.19.tgz#899544472d0fcb1b9bd419cd08e611afda3c3776"
-  integrity sha512-RUY+CcvLnqm86F8bLEbqsQwx6o+dGJk1I76uSw0Ofp5bfHXlj69zi6FlnEkGasq1gMf/IcBt8b1pvzt2Ecg/Eg==
+"@byted-apaas/server-common-node@^2.0.4":
+  version "2.0.21"
+  resolved "https://registry.npmmirror.com/@byted-apaas/server-common-node/-/server-common-node-2.0.21.tgz#dff0d70eea180a6844c0a700e83c0ed475c46524"
+  integrity sha512-mKt44ufmt76+domrjacU98ibRwAnyNXlwMMQMSTBG66qaA4NuHwDL2pVoyuoWRHPK985Cm9ay2YhbgXnjI4U6g==
+  dependencies:
+    bson "^1.0.7"
+    crypto-js "^4.1.1"
+    dayjs "^1.9.6"
+    form-data "^4.0.0"
+    got "11.8.6"
+    microtime "^3.1.1"
+    nanoid "^3.3.4"
+    node-cache "^5.1.2"
+    node-cls "^1.0.7"
+
+"@byted-apaas/server-sdk-node@1.1.21":
+  version "1.1.21"
+  resolved "https://registry.npmmirror.com/@byted-apaas/server-sdk-node/-/server-sdk-node-1.1.21.tgz#51a35a00e3e9f3a544328b88a76f3b65c032546e"
+  integrity sha512-81tuLePU1ldtnrNr1ZmoNnET5AC4uOzsuOoI+h+G+4K1kD3EzSGBO/Uz/3L61oXHIq5cNRBUVnf86yZz94utdg==
   dependencies:
     "@byted-apaas/server-common-node" "^2.0.13"
     "@jorgeferrero/stream-to-buffer" "^2.0.6"
